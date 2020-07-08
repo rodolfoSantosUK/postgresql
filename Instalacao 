@@ -1,0 +1,16 @@
+sudo apt-get install postgresql postgresql-contrib
+
+Acessando:
+sudo su - postgres
+
+Vendo a versão:
+psql
+
+Conectar:
+\ conninfo
+
+Saindo da shell
+\q
+
+Sair do usuario postgres
+exit
