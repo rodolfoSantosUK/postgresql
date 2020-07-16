@@ -7,10 +7,14 @@ Vendo a versão:
 psql
 
 Conectar:
-\ conninfo
+\conninfo
 
-Saindo da shell
+Saindo da shell usando metacomando
 \q
 
 Sair do usuario postgres
 exit
+
+*Intalando pgAdmin
+
+sudo apt-get install python 2.7-dev virtualenv python-pip libpq-dev

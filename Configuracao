@@ -1,0 +1,23 @@
+* Consultas básicas
+    select current_user;
+    select current_database;
+    select version();
+
+* Criando usuario :
+        sudo su - root
+        adduser
+        psql template1
+
+        create user rodolfo with password 'gui2809!';
+        create database teste;
+
+        grant ALL PRIVILEGES on database teste to rodolfo;
+
+* Conectando com o usuario:
+
+        su - rodolfo
+        psql -d teste -U rodolfo
+
+
+
+
