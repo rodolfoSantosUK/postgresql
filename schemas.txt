@@ -3,3 +3,28 @@ sudo su - postgres
 psql
 \c estabelecimento
 create schema estabelecimentos_comerciais;
+
+
+Schemas por usuario;
+
+criando usuario:
+
+adduser spadogs
+adduser cuidadocao
+
+create role spadogs WITH PASSWORD 'gui2809!'  ;
+create role cuidadocao WITH PASSWORD 'gui2809!' ;
+
+ALTER ROLE spadogs WITH LOGIN ;
+ALTER ROLE cuidadocao with LOGIN;
+
+CREATE DATABASE spadogs with owner = spadogs;
+CREATE DATABASE cuidadocao with owner = cuidadocao;
+
+\c spadogs
+CREATE SCHEMA spadogs;
+ALTER SCHEMA spadogs OWNER TO   spadogs;
+
+\c cuidadocao
+CREATE SCHEMA cuidadocao;
+ALTER SCHEMA cuidadocao OWNER TO cuidadocao;

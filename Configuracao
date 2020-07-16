@@ -15,8 +15,6 @@
 
 * Conectando com o usuario:
 
-        su - rodolfo
-        psql -d teste -U rodolfo
 
 
 
