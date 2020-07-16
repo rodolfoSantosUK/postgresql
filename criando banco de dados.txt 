@@ -1,0 +1,14 @@
+
+para listar todos os bancos de dados
+\list
+
+create database estabelecimentos;
+drop database estabelecimentos;
+
+trabalhando com banco de dados template:
+
+create database template_3;
+create database subTemplate template template_3;
+
+evitando que o template seja modificado ou excluído:
+update pg_database SET datistemplate = TRUE WHERE datname = 'template_3';

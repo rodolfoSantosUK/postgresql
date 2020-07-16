@@ -1,0 +1,5 @@
+
+sudo su - postgres
+psql
+\c estabelecimento
+create schema estabelecimentos_comerciais;
