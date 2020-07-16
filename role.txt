@@ -1,0 +1,12 @@
+
+create role eldorado LOGIN PASSWORD '#mudar123' CREATEDB VALID UNTIL 'infinity';
+
+create role eldorado LOGIN PASSWORD '#mudar123' SUPERUSER VALID UNTIL '2022-1-1 00:00';
+
+REMOVENDO :
+
+ DROP ROLE eldorado;
+
+Grupo: (Qualquer membro tera direitos concedidos a papel do grupo1)
+ CREATE ROLE grupo1 INHERIT;
+ GRANT grupo1 TO eldorado
