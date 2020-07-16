@@ -1,0 +1,16 @@
+
+
+Nesse diretorio estao os arquivos de configuração
+cd /etc/postgressql/12/main
+
+Acessar pelo usuario postgres as configurações do banco
+
+sudo -u postgres psql
+
+Gerenciando conexões:
+  // Consultando
+  select pid, query, state  from pg_stat_activity;
+  // Encerrando conexões usando pid
+  select pg_cancel_backend(44642);
+  select pg_terminate_backend(44642);
+
